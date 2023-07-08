@@ -5,6 +5,7 @@ local languages = {
   'yaml',
   'java',
   'rust',
+  'bash'
 }
 
 return {

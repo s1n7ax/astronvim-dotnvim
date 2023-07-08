@@ -6,7 +6,7 @@ function M.setup()
 
 	local s = ls.s
 
-	ls.add_snippets('bash', {
+	ls.add_snippets('sh', {
 		s('set', bash.primitives.default_flags()),
 	})
 end
