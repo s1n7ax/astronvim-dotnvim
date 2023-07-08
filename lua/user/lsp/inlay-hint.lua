@@ -13,7 +13,6 @@ vim.api.nvim_create_autocmd('LspAttach', {
       end
     end
 
-    vim.print(client.name, client.server_capabilities.inlayHintProvider)
     if client.server_capabilities.inlayHintProvider then
       vim.lsp.buf.inlay_hint(0, true)
     end
