@@ -1,3 +1,5 @@
 require('user.mappings.colemak-remaps')
-require('user.mappings.windows')
+require('user.mappings.normal')
+require('user.mappings.insert')
 require('user.mappings.telescope')
+require('user.mappings.terminal')

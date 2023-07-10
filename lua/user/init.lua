@@ -1,4 +1,3 @@
-require('user.lsp.inlay-hint')
 require('user.plugins.luasnip')
 
 return {
