@@ -1,6 +1,7 @@
 return {
   "folke/twilight.nvim",
   name = 'twilight',
+  enabled = false,
   opts = {
     dimming = {
       alpha = 0.25,
