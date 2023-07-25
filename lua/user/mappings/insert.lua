@@ -3,6 +3,7 @@ local wk = require('which-key')
 wk.register({
   ['<c-s>'] = { '<cmd>:w<cr>', 'Save the file' },
   ['<m-a>'] = { '<esc>I', '(Insert) Jump to line start' },
+  ['<m-e>'] = { '<esc>A', '(Insert) Jump to line end' },
   ['<m-h>'] = { '<esc>O', 'Insert new line below' },
   ['<m-k>'] = { '<esc>ddi', 'Delete current line' },
   ['<m-y>'] = {
