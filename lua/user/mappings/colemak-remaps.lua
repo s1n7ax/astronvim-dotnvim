@@ -30,6 +30,8 @@ wk.register({
 
 	j = { 'm', 'Create mark' },
 	J = { 'M', 'Middle line of window' },
+
+	['<c-l>'] = { '<c-i>', 'Jump to previous jump point' }
 }, {
 	mode = { 'n', 'x', 'o' },
 })
