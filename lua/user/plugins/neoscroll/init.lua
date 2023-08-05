@@ -8,8 +8,8 @@ return {
 
 		local t = {}
 
-		t['<C-u>'] = { 'scroll', { '-vim.wo.scroll', 'true', '50' } }
-		t['<C-d>'] = { 'scroll', { 'vim.wo.scroll', 'true', '50' } }
+		t['<C-u>'] = { 'scroll', { '-vim.wo.scroll', 'true', '100' } }
+		t['<C-d>'] = { 'scroll', { 'vim.wo.scroll', 'true', '100' } }
 		-- t['<C-b>'] =
 		-- 	{ 'scroll', { '-vim.api.nvim_win_get_height(0)', 'true', '450' } }
 		-- t['<C-f>'] =
