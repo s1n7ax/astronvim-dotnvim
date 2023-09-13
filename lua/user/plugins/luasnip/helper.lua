@@ -5,9 +5,15 @@ local M = {}
 
 function M.register_keymaps()
 	wk.register({
-		['<c-i>'] = { M.expand_or_jump('<c-i>'), '(Snippet) Expand or jump' },
-		['<c-m>'] = { M.jump_prev('<c-n>'), '(Snippet) Jump prev placeholder' },
-		['<c-l>'] = { M.change_choice('<c-l>'), '(Snippet) Change choice' },
+		-- when <C-i> is mapped to something, <Tab> default behaviour is shadowed
+		-- by the <C-i> mapping. To avoid this, we need to remap the <Tab> to be
+		-- itself
+		-- https://github.com/neovim/neovim/issues/20719
+		['<Tab>'] = { '<Tab>', 'Tab Space' },
+
+		['<C-i>'] = { M.expand_or_jump('<c-i>'), '(Snippet) Expand or jump' },
+		['<C-m>'] = { M.jump_prev('<c-n>'), '(Snippet) Jump prev placeholder' },
+		['<C-l>'] = { M.change_choice('<c-l>'), '(Snippet) Change choice' },
 	}, { mode = { 'i', 's' } })
 
 	wk.register({
@@ -20,7 +26,7 @@ function M.expand_or_jump(fallback_key)
 		if ls.expand_or_jumpable() then
 			ls.expand_or_jump()
 		else
-			vim.api.nvim_input(fallback_key)
+			-- vim.api.nvim_input(fallback_key)
 		end
 	end
 end
