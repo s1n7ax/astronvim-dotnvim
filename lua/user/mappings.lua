@@ -3,6 +3,7 @@ require('user.mappings.normal')
 require('user.mappings.insert')
 require('user.mappings.telescope')
 require('user.mappings.terminal')
+require('user.mappings.command')
 
 return function(maps)
 	-- disable window navigation mappings
