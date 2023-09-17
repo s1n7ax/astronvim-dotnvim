@@ -1,8 +1,10 @@
 local wk = require('which-key')
 
 local rg_glob_list = {
-	'!.git',
-	'!node_modules',
+	'!.git/',
+	'!node_modules/',
+	'!target/',
+	'!sass_cache/',
 }
 
 local rg_options = {
