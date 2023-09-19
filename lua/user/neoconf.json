@@ -15,6 +15,26 @@
   "lspconfig": {
     "lua_ls": {
       "Lua.format.enable": false
+    },
+    "rust_analyzer": {
+      "rust-analyzer": {
+        "inlayHints.typeHints.enable": true,
+        "imports": {
+          "granularity": {
+            "group": "module"
+          },
+          "prefix": "self"
+        },
+        "cargo": {
+          "buildScripts": {
+            "enable": true
+          },
+          "features": ["ssr"]
+        },
+        "procMacro": {
+          "enable": true
+        }
+      }
     }
   }
 }
