@@ -1,7 +1,21 @@
 local ls = require('luasnip')
 local wk = require('which-key')
+local config = require('user.plugins.luasnip.config')
 
 local M = {}
+
+function M.register_snippets()
+	for _, language in ipairs(config.languages) do
+		local module_path =
+			string.format('user.plugins.luasnip.snippets.%s', language)
+
+		local ok, snip = pcall(require, module_path)
+
+		if ok then
+			snip.setup()
+		end
+	end
+end
 
 function M.register_keymaps()
 	wk.register({
@@ -11,17 +25,23 @@ function M.register_keymaps()
 		-- https://github.com/neovim/neovim/issues/20719
 		['<Tab>'] = { '<Tab>', 'Tab Space' },
 
-		['<C-i>'] = { M.expand_or_jump('<c-i>'), '(Snippet) Expand or jump' },
-		['<C-m>'] = { M.jump_prev('<c-n>'), '(Snippet) Jump prev placeholder' },
-		['<C-l>'] = { M.change_choice('<c-l>'), '(Snippet) Change choice' },
+		['<C-i>'] = {
+			M.expand_or_jump(--[['<C-i>']]),
+			'(Snippet) Expand or jump',
+		},
+		['<C-m>'] = { M.jump_prev('<C-n>'), '(Snippet) Jump prev placeholder' },
+		['<C-l>'] = { M.change_choice('<C-l>'), '(Snippet) Change choice' },
 	}, { mode = { 'i', 's' } })
 
 	wk.register({
-		['<leader><leader>t'] = { M.refresh_snippets, '(Snippet) refresh' },
+		['<leader><leader>w'] = { M.refresh_snips, '(Snippet) refresh' },
 	})
+	-- wk.register({
+	-- 	['<leader><leader>ww'] = { M.refresh_snippets, '(Snippet) refresh' },
+	-- })
 end
 
-function M.expand_or_jump(fallback_key)
+function M.expand_or_jump(--[[_fallback_key]])
 	return function()
 		if ls.expand_or_jumpable() then
 			ls.expand_or_jump()
@@ -62,6 +82,7 @@ function M.change_choice(fallback_key)
 end
 
 function M.refresh_snips()
+	print('>>>>>')
 	print('Refreshing lua snips')
 
 	local module_utils = require('user.utils.module')
@@ -76,7 +97,7 @@ function M.refresh_snips()
 
 	-- just of testing snips
 	module_utils.unload_package('user.plugins.luasnip.demo')
-	require('nvim.plugins.luasnip.demo')
+	require('user.plugins.luasnip.demo')
 end
 
 return M
