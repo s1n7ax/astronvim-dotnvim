@@ -8,6 +8,11 @@ function M.setup()
 
 	ls.add_snippets('java', {
 		s('o', java.primitives.stdout()),
+		s('c', java.primitives.class()),
+		s('main', java.primitives.main()),
+		s('mainc', java.primitives.main_class()), -- generates a class with a main
+
+		s('v', java.choices.variable()),
 	})
 end
 
