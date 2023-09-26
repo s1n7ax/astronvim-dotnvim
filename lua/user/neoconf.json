@@ -14,7 +14,14 @@
   },
   "lspconfig": {
     "lua_ls": {
-      "Lua.format.enable": false
+      "Lua.format.enable": false,
+      "Lua.semantic.enable": false,
+      "Lua.workspace": {
+        "checkThirdParty": false,
+        "maxPreload": 10000,
+        "preloadFileSize": 10000
+      },
+      "Lua.telemetry": false
     },
     "rust_analyzer": {
       "rust-analyzer": {
