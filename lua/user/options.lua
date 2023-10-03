@@ -1,5 +1,5 @@
 return {
-  opt = {
-    showtabline = 0,
-  },
+	opt = {
+		showtabline = 0,
+	},
 }
