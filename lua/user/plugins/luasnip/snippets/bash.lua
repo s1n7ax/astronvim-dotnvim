@@ -8,6 +8,8 @@ function M.setup()
 
 	ls.add_snippets('sh', {
 		s('set', bash.primitives.default_flags()),
+		s('f', bash.primitives.func()),
+		s('v', bash.choices.variable()),
 	})
 end
 
