@@ -2,7 +2,7 @@ local wk = require('which-key')
 
 wk.register({
 	['<c-s>'] = { '<cmd>:w<cr>', 'Save the file' },
-	['<c-v>'] = { '<esc>pi', 'Paste' },
+	['<c-v>'] = { '<esc>pa', 'Paste' },
 	['<m-a>'] = { '<esc>I', '(Insert) Jump to line start' },
 	['<m-e>'] = { '<esc>A', '(Insert) Jump to line end' },
 	['<m-h>'] = { '<esc>O', 'Insert new line below' },
