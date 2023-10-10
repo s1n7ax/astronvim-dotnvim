@@ -6,7 +6,9 @@ return {
 		return vim.tbl_deep_extend('force', opts, {
 			sources = {
 				n.builtins.formatting.stylua,
-				n.builtins.formatting.prettierd,
+				n.builtins.formatting.prettierd.with({
+					disabled_filetypes = { 'json' },
+				}),
 			},
 		})
 	end,
