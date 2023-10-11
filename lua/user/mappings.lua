@@ -24,8 +24,5 @@ return function(maps)
 	maps.n['<C-q>'] = nil
 	maps.n['<leader>q'] = nil
 
-	maps.n['<C-s>'] = { '<cmd>update<cr>', desc = 'Save' }
-	maps.n['<C-q>'] = { '<cmd>confirm q<cr>', desc = 'Quit' }
-
 	return maps
 end
