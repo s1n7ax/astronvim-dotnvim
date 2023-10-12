@@ -20,6 +20,7 @@ return {
 		}, {
 			prefix = '<leader>',
 		})
+
 		require('overseer').setup()
 	end,
 }
