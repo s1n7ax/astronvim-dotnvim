@@ -9,6 +9,7 @@ return {
 				n.builtins.formatting.prettierd.with({
 					disabled_filetypes = { 'json' },
 				}),
+				n.builtins.formatting.nixpkgs_fmt,
 			},
 		})
 	end,
