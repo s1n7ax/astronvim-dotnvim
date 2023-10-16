@@ -16,6 +16,7 @@ return {
 				n = { '<CMD>OverseerQuickAction<CR>', 'Overseer Actions' },
 				s = { '<CMD>OverseerLoadBundle<CR>', 'Overseer Load' },
 				e = { '<CMD>OverseerRunCmd<CR>', 'Overseer Run CMD' },
+				o = { '<CMD>OverseerRun<CR>', 'Overseer Run' },
 			},
 		}, {
 			prefix = '<leader>',
