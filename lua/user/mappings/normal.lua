@@ -45,7 +45,7 @@ wk.register({
 		'Add line below',
 	},
 
-	['<C-s>'] = { '<cmd>w<cr>', 'Save' },
+	['<C-s>'] = { '<cmd>silent w<cr>', 'Save' },
 	['<C-q>'] = { '<cmd>confirm q<cr>', 'Quit' },
 })
 
