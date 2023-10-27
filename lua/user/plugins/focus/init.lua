@@ -4,5 +4,8 @@ return {
 	enabled = true,
 	opts = {
 		commands = false,
+		ui = {
+			signcolumn = false,
+		},
 	},
 }
