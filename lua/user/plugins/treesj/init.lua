@@ -7,7 +7,7 @@ return {
 	'Wansmer/treesj',
 	dependencies = { 'treesitter' },
 	keys = {
-		{ '<leader>it', toggle, 'Spread/collapse block' },
+		{ '<leader>it', toggle, desc = 'Spread/collapse block' },
 	},
 	config = function()
 		local tsj = require('treesj')

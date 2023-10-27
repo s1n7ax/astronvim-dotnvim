@@ -5,20 +5,20 @@ return {
 		{
 			'<leader>hd',
 			'<cmd>DiffviewFileHistory %<cr>',
-			'Git diff file',
+			desc = 'Git diff file',
 			mode = 'n',
 		},
 		{
 			'<leader>hD',
 			'<cmd>DiffviewFileHistory<cr>',
-			'Git diff branch',
+			desc = 'Git diff branch',
 			mode = 'n',
 		},
 
 		{
 			'<leader>hd',
 			':DiffviewFileHistory<cr>',
-			'Git diff selection',
+			desc = 'Git diff selection',
 			mode = 'v',
 		},
 	},
