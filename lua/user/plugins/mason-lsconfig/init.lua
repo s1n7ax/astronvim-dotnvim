@@ -1,6 +1,6 @@
 return {
 	'williamboman/mason-lspconfig.nvim',
 	opts = {
-		ensure_installed = { 'jdtls', 'lua-language-server' },
+		ensure_installed = { 'jdtls', 'lua_ls' },
 	},
 }
