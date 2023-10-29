@@ -36,7 +36,9 @@
           "buildScripts": {
             "enable": true
           },
-          "features": ["ssr"]
+          "features": [
+            "ssr"
+          ]
         },
         "procMacro": {
           "enable": true
