@@ -1,13 +1,7 @@
-local plugin_path = '~/Workspace/nvim-snips'
+local file = require('user.utils.file')
 
-local M = {
+return {
 	's1n7ax/nvim-snips',
 	name = 'snips',
+	dir = file.is_pkg_dir('~/Workspace/nvim-snips'),
 }
-
-if vim.fn.isdirectory(plugin_path) == 1 then
-	M.dev = true
-	M.dir = plugin_path
-end
-
-return M

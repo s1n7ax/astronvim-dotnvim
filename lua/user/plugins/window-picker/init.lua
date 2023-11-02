@@ -1,15 +1,9 @@
-local M = {
+local file = require('user.utils.file')
+
+return {
 	's1n7ax/nvim-window-picker',
+	dir = file.is_pkg_dir('~/Workspace/nvim-window-picker'),
 	opts = function(_, opts)
 		return opts
 	end,
 }
-
-local plugin_path = '~/Workspace/nvim-window-picker'
-
-if vim.fn.isdirectory(plugin_path) == 1 then
-	M.dev = true
-	M.dir = plugin_path
-end
-
-return M
