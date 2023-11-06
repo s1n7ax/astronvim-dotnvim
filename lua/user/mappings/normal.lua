@@ -53,7 +53,9 @@ wk.register({
 --                            Movements                             --
 ----------------------------------------------------------------------
 wk.register({
-	["''"] = { '``', 'Go to last jump point' },
+	["''"] = { '``zz', 'Go to last jump point' },
+	['<C-o>'] = { '<C-o>zz', 'Go to prev jump point' },
+	['<C-l>'] = { '<C-i>zz', 'Go to next jump point' },
 })
 
 ----------------------------------------------------------------------
