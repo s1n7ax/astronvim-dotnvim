@@ -18,6 +18,7 @@ return {
 			'javascript',
 			'json5',
 			'lua',
+			'markdown',
 			'markdown_inline',
 			'nix',
 			'python',
