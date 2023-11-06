@@ -9,6 +9,7 @@ return {
 		servers = {
 			'lua_ls',
 			'rust_analyzer',
+			'jdtls',
 		},
 
 		formatting = {
