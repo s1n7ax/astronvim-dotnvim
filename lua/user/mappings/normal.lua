@@ -56,6 +56,8 @@ wk.register({
 	["''"] = { '``zz', 'Go to last jump point' },
 	['<C-o>'] = { '<C-o>zz', 'Go to prev jump point' },
 	['<C-l>'] = { '<C-i>zz', 'Go to next jump point' },
+	['0'] = { '^', 'Go to first character of line' },
+	['^'] = { '0', 'Go to start of line' },
 })
 
 ----------------------------------------------------------------------
