@@ -5,7 +5,7 @@ local flash = function(func_name)
 end
 
 local keys = {
-	{ 's', mode = { 'n', 'x', 'o' }, flash('jump'), desc = 'Flash' },
+	{ '<CR>', mode = { 'n', 'x', 'o' }, flash('jump'), desc = 'Flash' },
 	{ '<c-s>', mode = { 'c' }, flash('toggle'), desc = 'Toggle Flash Search' },
 	{ 'r', mode = 'o', flash('remote'), desc = 'Remote Flash' },
 	{
@@ -28,9 +28,9 @@ return {
 	opts = {
 		modes = {
 			search = {
-				enabled = false
-			}
-		}
+				enabled = false,
+			},
+		},
 	},
 	keys = keys,
 }
