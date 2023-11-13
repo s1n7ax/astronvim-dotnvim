@@ -4,6 +4,7 @@ return {
 		change_detection = {
 			notify = false,
 		},
+		concurrency = 5,
 	},
 	lsp = {
 		servers = {
