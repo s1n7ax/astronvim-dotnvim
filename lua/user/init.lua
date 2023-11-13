@@ -1,5 +1,5 @@
 return {
-	colorscheme = 'tokyonight',
+	colorscheme = 'everforest',
 	lazy = {
 		change_detection = {
 			notify = false,
