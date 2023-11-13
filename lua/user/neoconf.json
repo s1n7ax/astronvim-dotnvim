@@ -17,13 +17,9 @@
       "Lua.format.enable": false,
       "Lua.semantic.enable": false,
       "Lua.workspace": {
-        "checkThirdParty": false,
         "maxPreload": 10000,
         "preloadFileSize": 10000
       },
-      "Lua.workspace.checkThirdParty": false,
-      "Lua.workspace.maxPreload": 10000,
-      "Lua.workspace.preloadFileSize": 10000,
       "Lua.telemetry": false
     },
     "rust_analyzer": {
