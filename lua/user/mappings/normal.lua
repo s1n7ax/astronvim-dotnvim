@@ -76,3 +76,13 @@ wk.register({
 }, {
 	prefix = '<leader><leader>',
 })
+
+----------------------------------------------------------------------
+--                              Other                               --
+----------------------------------------------------------------------
+
+wk.register({
+	o = { '<cmd>messages<cr>', 'Open messages window' },
+}, {
+	prefix = '<leader><leader>',
+})
