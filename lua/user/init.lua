@@ -1,5 +1,3 @@
-require('user.variable')
-
 return {
 	colorscheme = 'everforest',
 	lazy = {
