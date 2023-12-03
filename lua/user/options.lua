@@ -4,5 +4,6 @@ return {
 		spell = true,
 		expandtab = false,
 		shiftround = true,
+		scrolloff = 10,
 	},
 }
