@@ -11,7 +11,6 @@ return {
 			'lua_ls',
 			'rust_analyzer',
 			'jdtls',
-			'teal_ls',
 		},
 
 		formatting = {
