@@ -1,6 +1,6 @@
 return {
 	'williamboman/mason-lspconfig.nvim',
 	opts = {
-		ensure_installed = { 'jdtls', 'jsonls' },
+		ensure_installed = { 'jsonls' },
 	},
 }
