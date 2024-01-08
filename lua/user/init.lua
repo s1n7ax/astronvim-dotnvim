@@ -1,5 +1,5 @@
 return {
-	colorscheme = 'tokyonight',
+	colorscheme = 'rose-pine-main',
 	lazy = {
 		change_detection = {
 			notify = false,
